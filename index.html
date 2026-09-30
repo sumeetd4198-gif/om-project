@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blooming Flowers | Online Flower Shop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <h1>🌸 Blooming Flowers</h1>
+    <button class="menu" onclick="toggleMenu()">☰</button>
+    <ul id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#categories">Categories</a></li>
+      <li><a href="#products">Flowers</a></li>
+      <li><a href="#order">Order</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-content">
+    <p class="tag">FRESH • BEAUTIFUL • DELIVERED</p>
+    <h2>Flowers That Make Every Moment Special</h2>
+    <p>Fresh flowers and beautiful bouquets for birthdays, anniversaries, celebrations and everyday smiles.</p>
+    <a class="btn" href="#products">Shop Flowers</a>
+  </div>
+</section>
+
+<section id="categories">
+  <h2>Shop by Category</h2>
+  <div class="category-grid">
+    <div class="category">🌹 <h3>Roses</h3><p>Classic flowers of love.</p></div>
+    <div class="category">🌷 <h3>Tulips</h3><p>Bright and elegant blooms.</p></div>
+    <div class="category">🌻 <h3>Sunflowers</h3><p>Cheerful flowers for every day.</p></div>
+    <div class="category">💐 <h3>Bouquets</h3><p>Beautifully arranged gifts.</p></div>
+  </div>
+</section>
+
+<section id="products">
+  <h2>Our Flowers</h2>
+  <div class="product-grid">
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=700&q=80" alt="Red rose bouquet">
+      <div class="product-info">
+        <span class="badge">Popular</span>
+        <h3>Red Rose Bouquet</h3>
+        <p>Fresh red roses arranged beautifully for expressing love and care.</p>
+        <div class="product-bottom"><strong>₹799</strong><button onclick="selectProduct('Red Rose Bouquet')">Order Now</button></div>
+      </div>
+    </article>
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=700&q=80" alt="Colorful tulips">
+      <div class="product-info">
+        <span class="badge">New</span>
+        <h3>Colorful Tulips</h3>
+        <p>A colorful collection of fresh tulips perfect for special occasions.</p>
+        <div class="product-bottom"><strong>₹699</strong><button onclick="selectProduct('Colorful Tulips')">Order Now</button></div>
+      </div>
+    </article>
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1597848212624-e19e7e1e7b2b?auto=format&fit=crop&w=700&q=80" alt="Sunflower bouquet">
+      <div class="product-info">
+        <span class="badge">Fresh</span>
+        <h3>Sunflower Bouquet</h3>
+        <p>Bright yellow sunflowers that bring happiness and freshness.</p>
+        <div class="product-bottom"><strong>₹599</strong><button onclick="selectProduct('Sunflower Bouquet')">Order Now</button></div>
+      </div>
+    </article>
+    <article class="product">
+      <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=700&q=80" alt="Pink flower bouquet">
+      <div class="product-info">
+        <span class="badge">Gift</span>
+        <h3>Pink Flower Bouquet</h3>
+        <p>A lovely pink bouquet for birthdays, celebrations and surprises.</p>
+        <div class="product-bottom"><strong>₹899</strong><button onclick="selectProduct('Pink Flower Bouquet')">Order Now</button></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="order" class="order-section">
+  <h2>Place Your Order</h2>
+  <form id="orderForm">
+    <div class="form-grid">
+      <div><label for="name">Customer Name</label><input id="name" type="text" placeholder="Enter your name"></div>
+      <div><label for="email">Email</label><input id="email" type="email" placeholder="Enter your email"></div>
+      <div><label for="phone">Phone Number</label><input id="phone" type="tel" placeholder="10-digit phone number"></div>
+      <div><label for="flower">Select Flower</label>
+        <select id="flower">
+          <option value="">-- Select Flower --</option>
+          <option>Red Rose Bouquet</option>
+          <option>Colorful Tulips</option>
+          <option>Sunflower Bouquet</option>
+          <option>Pink Flower Bouquet</option>
+        </select>
+      </div>
+      <div><label for="quantity">Quantity</label><input id="quantity" type="number" min="1" value="1"></div>
+      <div><label for="date">Delivery Date</label><input id="date" type="date"></div>
+      <div class="full"><label for="address">Delivery Address</label><textarea id="address" rows="4" placeholder="Enter complete delivery address"></textarea></div>
+    </div>
+    <button class="submit-btn" type="submit">Place Order</button>
+    <p id="message"></p>
+  </form>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-grid">
+    <div>📞<strong> Phone</strong><br>+91 98765 43210</div>
+    <div>📧<strong> Email</strong><br>bloomingflowers@gmail.com</div>
+    <div>📍<strong> Location</strong><br>Pune, Maharashtra, India</div>
+  </div>
+</section>
+
+<footer><p>© 2026 Blooming Flowers. All Rights Reserved.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
